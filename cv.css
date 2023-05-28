@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --pry_color :rgb(9, 123, 189);
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    padding: 1rem;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(240, 240, 240, 0.897);
+    user-select: none;
+    background-color: rgba(19, 19, 26, 0.938);
+}
+.cv_container{
+    max-width: 100rem;
+    width: 100%;
+    min-height: 100rem;
+    background-color: white;
+    padding: 1rem;
+    margin-top: 5rem;
+    display: none;
+}
+.headerAndImg{
+    background-color: var(--pry_color);
+    width: 100%;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: .8rem;
+}
+.headerAndImg .user_name{
+
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.headerAndImg .img_container{
+    width: 18rem ;
+    height: 18rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    position: absolute;
+    bottom: -5rem;
+    margin-left: 5rem;
+    right: 4rem;
+    top: 3rem;
+}
+.img_container img{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+   
+   
+}
+.main_body{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+height: 100rem;
+margin-top: 10rem;
+text-transform: capitalize;
+gap: 1rem;
+}
+.left_body{
+    background-color: rgb(238, 238, 238);
+    border-radius: .3rem;
+    padding: .5rem;
+}
+.right_body{
+    background-color: rgb(238, 238, 238);
+    border-radius: .3rem;
+    padding: .5rem;
+}
+.detail{
+    margin: 2rem 0;
+}
+.detail_head h2{
+    font-size: 1.5rem;
+    color: var(--pry_color);
+    font-weight: 500;
+
+}
+.detail_text{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.671);
+    font-weight: 700;
+}
+.left_bodt_header{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--pry_color);
+    margin: 1rem 0;
+}
+.left_bodt_header h2{
+    font-size: 2.8rem;
+    margin-left: 1rem;
+}
+li{
+    margin-left: 2rem;
+}
+#cv_user_skill_1,#cv_user_skill_2,#cv_user_skill_3,#cv_user_skill_4,#cv_user_skill_5,#cv_user_skill_6{
+    display: none; 
+}

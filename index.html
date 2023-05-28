@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>generate the cv</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cv.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   
+    <div class="container">
+        <header>
+            <h2><span>Gen</span>erate <span>Res</span>ume</h2>
+        </header>
+        <form action="" class="form">
+            <!-- row -->
+            <div class="row">
+                
+                <div class="row_left">
+                    <h3>first name</h3>
+                    <input type="text" id="Fname" placeholder="first name"  >
+                </div>
+                <div class="row_right">
+                    <h3>Last name</h3>
+                    <input type="text" id="Lname" placeholder="Last name"  >
+                </div>
+            </div>
+             <!-- row -->
+              <!-- row -->
+            <div class="row">
+              
+                <div class="row_left">
+                    <h3>Phone</h3>
+                    <input type="number" id="phone" placeholder="Phone"  >
+                </div>
+                <div class="row_right">
+                    <h3>Email</h3>
+                    <input type="email" id="email" placeholder="Email"  >
+                </div>
+            </div>
+             <!-- row -->
+              <!-- row -->
+            <div class="row">
+               
+                <div class="row_left">
+                    <h3>Education</h3>
+                    <input type="text" id="edu" placeholder="Education"  >
+                </div>
+                <div class="row_right">
+                    <h3>feculty</h3>
+                    <input type="text" id="feculty" placeholder="feculty"  >
+                </div>
+                
+            </div>
+             <!-- row -->
+             <div class="row">
+               
+                <div class="row_left">
+                    <h3>Age</h3>
+                    <input type="number" id="age" placeholder="Age"  >
+                </div>
+                <div class="row_right">
+                    <h3>Experience</h3>
+                    <input type="text" id="exp" placeholder="Experience"  >
+                </div>
+            </div>
+             <!-- row -->
+             <!-- row -->
+             <div class="row">
+                
+                <div class="row_left">
+                    <h3>Address</h3>
+                    <input type="text" id="address" placeholder="Address"  >
+                </div>
+                <div class="row_right">
+                    <h3>Reign</h3>
+                    <input type="text" id="reign" placeholder="Reign"  >
+                </div>
+            </div>
+             <!-- row -->
+             <!-- row -->
+             <div class="row">
+                
+                <div class="row_left skill_left">
+                    <h3>skill</h3>
+                    <div class="skill_input">
+                        <div class="skill">
+                            <h3>office</h3>
+                            <input type="checkbox" name="" id="skill_office" >
+                           </div>
+                        <div class="skill">
+                            <h3>ui/ux</h3>
+                            <input type="checkbox" name="" id="skill_ui/ux">
+                           </div>
+                           <div class="skill">
+                            <h3>html</h3>
+                            <input type="checkbox" name="" id="skill_html">
+                           </div>
+                           <div class="skill">
+                            <h3>css</h3>
+                            <input type="checkbox" name="" id="skill_css">
+                           </div>
+                           <div class="skill">
+                            <h3>js</h3>
+                            <input type="checkbox" name="" id="skill_js">
+                           </div>
+                           <div class="skill">
+                            <h3>php</h3>
+                            <input type="checkbox" name="" id="skill_php">
+                           </div>
+                           
+                    </div>
+                 
+                </div>
+                <div class="row_right">
+                    <h3>CNIC</h3>
+                    <input type="number" id="cnic" placeholder="cnic"  >
+                </div>
+            </div>
+             <!-- row -->
+             <!-- row -->
+             <div class=" about_us">
+                
+
+                    <h3>About Us</h3>
+                    <textarea id="about_us" placeholder="Write the biography..."  ></textarea>
+                    <!-- <input type="text"> -->
+                <!-- </div> -->
+            </div>
+             <!-- row -->
+             <div class="btn">
+              
+                <button  class="Submit_btn" id="choose_btn"><i class='bx bxs-file-image' ></i>choose file</button>
+                <input value="submit" type="submit" id="submit" class="Submit_btn">
+             </div>
+        </form>
+        <input type="file"  hidden  id="user_img_input" >
+    </div>
+    <div class="backbutton" id="backbuttonDiv">
+        <button class="back_btn" id="backbutton"><i class='bx bx-arrow-back' ></i>Go back</button>
+    </div>
+<!-- ================================================================================================ -->
+<!-- ================================================================================================ -->
+<!-- ================================================================================================ -->
+<!-- ================================================================================================ -->
+<!-- ================================================================================================ -->
+    <!-- cv -->
+    <!-- cv -->
+    <!-- cv -->
+    <div class="cv_container" id="cv_container">
+        <!-- top -->
+        <div class="headerAndImg">
+            <div class="user_name">I am, <span id="cv_userFname">...</span></div >
+            <div class="img_container">
+                <img id="cv_user_img" src="./img/profile-icon-design-free-vector.webp" alt="..">
+            </div>
+        </div>
+        <!-- top -->
+<div class="main_body">
+    <!-- left_body -->
+    <div class="left_body">
+        <div class="left_bodt_header">
+            <h2>personal information</h2>
+        </div>
+        <!-- detail -->
+        <div class="detail">
+            <div class="detail_head">
+                <h2>my name</h2>
+                <div class="detail_text" id="cv_user_name">..</div>
+            </div>
+        </div>
+        <!-- detail -->
+        <!-- detail -->
+        <div class="detail">
+            <div class="detail_head">
+                <h2>My age</h2>
+                <div class="detail_text" id="cv_user_age">.. </div>
+            </div>
+        </div>
+        <!-- detail -->
+        <!-- detail -->
+        <div class="detail">
+            <div class="detail_head">
+                <h2>reign</h2>
+                <div class="detail_text" id="cv_user_reign">islam</div>
+            </div>
+        </div>
+        <!-- detail -->
+        <!-- detail -->
+        <div class="detail">
+            <div class="detail_head">
+                <h2>cnic</h2>
+                <div class="detail_text" id="cv_user_cnic">...</div>
+            </div>
+        </div>
+        <!-- detail -->
+        <div class="left_bodt_header">
+            <h2>education</h2>
+        </div>
+        <!-- detail -->
+        <div class="detail">
+            <div class="detail_head">
+                <h2>qualification</h2>
+                <div class="detail_text" id="cv_user_quail">....</div>
+            </div>
+        </div>
+        <!-- detail -->
+          <!-- detail -->
+          <div class="detail">
+            <div class="detail_head">
+                <h2>feculty</h2>
+                <div class="detail_text" id="cv_user_feculty">..</div>
+            </div>
+        </div>
+        <!-- detail -->
+        <!-- detail -->
+        <!-- detail -->
+        <div class="detail">
+            <div class="detail_head">
+                <h2>experience</h2>
+                <div class="detail_text" id="cv_user_exp">...</div>
+            </div>
+        </div>
+        <!-- detail -->
+        <!-- detail -->
+ <!-- detail -->
+ <div class="left_bodt_header">
+    <h2>about us</h2>
+</div>
+<!-- detail -->
+<div class="detail">
+    <div class="detail_head">
+        <h2>about us</h2>
+        <div class="detail_text" id="cv_user_about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quae exercitationem, blanditiis dolore quod natus modi neque minus quis fugit veniam officia ut? Doloribus officiis velit ullam amet dolores cum. </div>
+    </div>
+</div>
+
+<!-- detail -->
+
+    </div>
+     <!-- left_body -->
+     <!-- ========================= -->
+     <!-- ========================= -->
+     <!-- ========================= -->
+     <!-- ========================= -->
+      <!-- right_body -->
+      <div class="right_body">
+        <!-- left_body -->
+    <div class="left_body">
+        <div class="left_bodt_header">
+            <h2>contact</h2>
+        </div>
+        <!-- detail -->
+        <div class="detail">
+            <div class="detail_head">
+                <h2>phone</h2>
+                <div class="detail_text" id="cv_user_contact">... </div>
+            </div>
+        </div>
+        <!-- detail -->
+        <!-- detail -->
+        <div class="detail">
+            <div class="detail_head">
+                <h2>email</h2>
+                <div class="detail_text" id="cv_user_email">... </div>
+            </div>
+        </div>
+        <!-- detail -->
+        <!-- detail -->
+        <div class="detail">
+            <div class="detail_head">
+                <h2>location</h2>
+                <div class="detail_text" id="cv_user_address">...</div>
+            </div>
+        </div>
+        <!-- detail -->
+        <!-- detail -->
+        <div class="left_bodt_header">
+            <h2>skills</h2>
+        </div>
+        <!-- detail -->
+        <ul>
+        <div class="detail" id="cv_user_skill_1">
+            <div class="detail_head">
+                <h2><li >ui/ux</li></h2>
+            </div>
+        </div>
+        
+        <div class="detail" id="cv_user_skill_2">
+            <div class="detail_head">
+                <h2><li >html</li></h2>
+            </div>
+        </div>
+        <!-- detail -->
+        <div class="detail" id="cv_user_skill_3">
+            <div class="detail_head">
+                <h2><li >css</li></h2>
+            </div>
+        </div>
+        <!-- detail -->
+        <div class="detail" id="cv_user_skill_4">
+            <div class="detail_head">
+                <h2><li >js</li></h2>
+            </div>
+        </div>
+        <!-- detail -->
+        <div class="detail" id="cv_user_skill_5">
+            <div class="detail_head">
+                <h2><li >php</li></h2>
+            </div>
+        </div>
+        <!-- detail -->
+        <div class="detail" id="cv_user_skill_6">
+            <div class="detail_head">
+                <h2><li >office</li></h2>
+            </div>
+        </div>
+        <!-- detail -->
+        <!-- detail -->
+    </ul>
+        <!-- detail -->
+        <!-- detail -->
+ <!-- detail -->
+
+<!-- detail -->
+      </div>
+      <!-- right_body -->
+</div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
